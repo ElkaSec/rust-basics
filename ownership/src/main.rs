@@ -1,11 +1,14 @@
 fn main() {
     let s = String::from("alice");
-    println!("before :{s}");
+    println!("{s}");
+    let s = shout(s);
+    println!("{s}");
 
-    let S = shout(s);
-
-    println!("after :{S}")
+    let n = 7;
+    let n_d = double(n);
+    println!("{n} doubled = {n_d}");
 }
+
 fn shout(name: String) -> String {
     name.to_uppercase()
 }
